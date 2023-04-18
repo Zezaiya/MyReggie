@@ -5,10 +5,10 @@ spring:
     username: root
     password: 123456
     type: com.alibaba.druid.pool.DruidDataSource
-  main:
-    banner-mode: off
-mybatis-plus:        #??????????????????
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   global-config:
-    banner: false
     db-config:
-      id-type: auto
+      id-type: ASSIGN_ID

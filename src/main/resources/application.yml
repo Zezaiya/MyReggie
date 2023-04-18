@@ -5,13 +5,10 @@ spring:
     username: root
     password: 123456
     type: com.alibaba.druid.pool.DruidDataSource
-  main:
-    banner-mode: off
-mybatis-plus:        #取消控制台无用图标显示
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   global-config:
-    banner: false
     db-config:
       id-type: ASSIGN_ID
-  configuration:
-    map-underscore-to-camel-case: true    #在映射实体或者属性时,将数据库中表名和字段名中的下划线去掉,按照驼峰命名法映射
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
