@@ -1,3 +1,6 @@
+reggie:
+  path: D:\img\
+
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -5,6 +8,11 @@ spring:
     username: root
     password: 123456
     type: com.alibaba.druid.pool.DruidDataSource
+  mail:
+    host: smtp.qq.com
+    username: 2754013417@qq.com
+    password: pdfhlkbcogpldchg
+    default-encoding: UTF-8
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
@@ -12,3 +20,4 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: ASSIGN_ID
+
